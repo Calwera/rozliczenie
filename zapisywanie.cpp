@@ -2,6 +2,10 @@
 #include <fstream>
 #include <iostream>
 using namespace std;
+
+
+
+
 fstream plik;
 plik.open( "rozliczenie.txt", ios::in | ios::out );
 if( plik.good() == true )
