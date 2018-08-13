@@ -6,16 +6,24 @@
 
 using namespace std;
 
+ 
 
 
-
-fstream plik;
-plik.open( "rozliczenie.txt", ios::in | ios::out );
-if( plik.good() == true )
+string zapisywanie::dane = "rozliczenie.txt";
+void zapisywanie::zapisz(string nazwa = dane)
 {
-    cout << "Uzyskano dostep do pliku!" << endl;
+    fstream plik;
+    plik.open( dane, ios::in | ios::out );
+    if( plik.good() == true )
+        {
+            cout << "Uzyskano dostep do pliku!" << endl;
     
-} else cout << "Dostep do pliku zostal zabroniony!" << endl;
+        } else cout << "Dostep do pliku zostal zabroniony!" << endl;
 
 
 plik.close();
+}
+void zapisywanie::odczytaj(string)
+{
+    
+}
