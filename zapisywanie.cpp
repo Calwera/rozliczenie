@@ -10,6 +10,7 @@ using namespace std;
 
 
 string zapisywanie::dane = "rozliczenie.txt";
+
 void zapisywanie::zapisz(string nazwa = dane)
 {
     fstream plik;
@@ -23,6 +24,7 @@ void zapisywanie::zapisz(string nazwa = dane)
 
 plik.close();
 }
+
 void zapisywanie::odczytaj(string)
 {
     
