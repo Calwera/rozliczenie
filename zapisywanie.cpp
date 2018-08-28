@@ -27,5 +27,10 @@ plik.close();
 
 void zapisywanie::odczytaj(string)
 {
-    
+    fstream plik;
+    plik.open( dane, ios::out);
+
+ 
+     plik.close();
+ 
 }
