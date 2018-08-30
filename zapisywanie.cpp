@@ -32,5 +32,5 @@ void zapisywanie::odczytaj(string)
 
  
      plik.close();
- 
+
 }
