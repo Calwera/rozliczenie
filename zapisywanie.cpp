@@ -21,7 +21,8 @@ void zapisywanie::zapisz(string nazwa = dane)
     
         } else cout << "Dostep do pliku zostal zabroniony!" << endl;
 
-
+    plik << oper1.get_sumap() << " " <<  oper1.get_sumar() << " " << oper1.get_sumap() - oper1.get_sumar();
+ 
 plik.close();
 }
 
