@@ -15,6 +15,7 @@ void Menu::menu()
 		cout << "1. ROZLICZ RACHUNKI" << endl;
 		cout << "2. ZAPISZ DANE DO PLIKU " << endl;
 		cout << "3. OPUSC PROGRAM " << endl;
+		cout << "4. WCZYTAJ DANE Z PLIKU " << endl;
 	
 		int wybor;
 		cin >> wybor;
@@ -22,17 +23,28 @@ void Menu::menu()
 		switch (wybor)
 		{
 			case 1:
-			{
+				{
 				operations oper1;
 				cout << "SUMA WYNOSI : " << oper1.sterowanie()<< endl;
 				cout << "WYKONANO" << endl;
 				break;
-			}
+				}
 			case 2:
-		
-				
+				{
+				zapisywanie oper1;
+				oper1.zapisz();
+				cout << "DANE ZAPISANO !!!!: << endl;
+				break;
+				}
 			case 3:
 				exit(1);
+			case 4:
+				{
+				zapisywanie oper1;
+				oper1.odczytaj();
+				break;
+				}
+							
 			default:
 				cout << "NIE MA TAKIEJ OPCJI" << endl;
 				break;
