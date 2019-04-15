@@ -14,8 +14,8 @@ void Menu::menu()
 		cout << "________________________________________________" << endl;
 		cout << "1. ROZLICZ RACHUNKI" << endl;
 		cout << "2. ZAPISZ DANE DO PLIKU " << endl;
-		cout << "3. OPUSC PROGRAM " << endl;
-		cout << "4. WCZYTAJ DANE Z PLIKU " << endl;
+		cout << "3. WCZYTAJ DANE Z PLIKU " << endl;
+		cout << "4. ZAKOŃCZ PROGRAM " << endl;
 	
 		int wybor;
 		operations oper1;
@@ -37,13 +37,13 @@ void Menu::menu()
 				break;
 				}
 			case 3:
-				exit(1);
-			case 4:
 				{
 				zapisywanie wczy1;
 				wczy1.odczytaj();
 				break;
 				}
+			case 4:
+				exit(1);
 							
 			default:
 				cout << "NIE MA TAKIEJ OPCJI" << endl;
