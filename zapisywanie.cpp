@@ -18,6 +18,8 @@ void zapisywanie::zapisz(string nazwa = dane)
     if( plik.good() == true )
         {
             cout << "Uzyskano dostep do pliku!" << endl;
+     // trzeba się zastanowić w jaki sposób zapisać dane do pliku i które dane grupujemy
+     // czy tylko rozchody i przychody(miesieczne czy całe sumy) czy również pojedyńcze koszta
     
         } else cout << "nie uzyskanu dostępu do pliku danych" << endl;
 
@@ -36,7 +38,11 @@ void zapisywanie::odczytaj(string nazwa = dane)
     
         } else cout << "nie uzyskanu dostępu do pliku danych" << endl;
    
-
+      //tu akurat nie widzę dużych problemów bo tylko przesyłamy do odpowiednich danych i tyle
+     
+          suma_rozchodow << dane;
+	         suma_przychodow << dane;
+     cout << " stan konta : " << dane;
  
      plik.close();
 
