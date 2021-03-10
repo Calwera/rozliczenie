@@ -19,7 +19,7 @@ void dodaj(double suma, double wartosc)
 {
 
 }
-
+//test github
 void operations::rozchody()
 {
 	double temp = 0;
@@ -71,8 +71,8 @@ double operations::sterowanie()
 	cout << "Wprowadz przychody:" << endl;
 	przychody();
 
-	cout << "SUMA PRZYCHODÓW : " << get_sumap() << endl;
-	cout << "SUMA RACHUNKÓW : "  << get_sumar() << endl;
+	cout << "SUMA PRZYCHODï¿½W : " << get_sumap() << endl;
+	cout << "SUMA RACHUNKï¿½W : "  << get_sumar() << endl;
 
 	return suma_przychodow - suma_rozchodow;
 }
