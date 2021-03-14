@@ -1,5 +1,6 @@
 #include "Menu.h"
 #include "operations.h"
+#include "zapisywanie.h"
 #include <iostream>
 using namespace std;
 
@@ -8,7 +9,6 @@ void Menu::menu()
 	while (1)
 	{
 		cout << "_______________________________________________"  << endl;
-		cout << endl;
 		cout << "|WITAJ! W ROZLICZENIU MIESIECZNYM !!!!!!!!!!!!!|" << endl;
 		cout << "|WYBIERZ ODPOWIEDNIA OPCJE Z MENU:             |" << endl;
 		cout << "________________________________________________" << endl;
@@ -32,14 +32,14 @@ void Menu::menu()
 			case 2:
 				{
 				zapisywanie zaps1;
-				zaps1.zapisz();
-				cout << "DANE ZAPISANO !!!!: << endl;
+				zaps1.zapisz('plik.txt');
+				cout << "DANE ZAPISANO !!!!:" << endl;
 				break;
 				}
 			case 3:
 				{
 				zapisywanie wczy1;
-				wczy1.odczytaj();
+				wczy1.odczytaj('plik.txt');
 				break;
 				}
 			case 4:

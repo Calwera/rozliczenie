@@ -9,7 +9,7 @@ using namespace std;
  
 
 
-string zapisywanie::dane = "rozliczenie.txt";
+zapisywanie::dane = "rozliczenie.txt";
 
 void zapisywanie::zapisz(string nazwa = dane)
 {
